@@ -2,6 +2,8 @@
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -106,13 +108,77 @@
     <routinesParameter id="_SS8l-e7qEfCsTs_yhehzeg" name="TalendStringUtil"/>
     <routinesParameter id="_SSprAO7qEfCsTs_yhehzeg" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_70497933-5e78-4c1b-b6af-39d143a4b8ef"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>du6n3sLAgPGq8KG7xpflpct3PnsSC2eqZRrqftzeGotfSXVqB0HVE9WQUUlPmfUe/mZcrx2cCsXk&#13;
-6i+IyHu7NA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d24e6567-7817-4ef8-82c7-c043ee2e7021"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3zgDJ0hqvsxPAYltm/PRdS8tN5FpyeDQE2Os9hxm6xaplQEd9tGeIN2rcKIDp3edJ69y6FOftFLy&#13;
-Rh0I2PzJEg==</DigestValue></Reference></SignedInfo><SignatureValue>LimCGuTlNt7TlEYMvH4Gzj32HKOVAkwd4dpWohTuuoyA6/9qD6TcK+ygBi6qYB7uDd1f+uYf5OBb&#13;
-QfWNs7oMT/diuUDPPn3PKNt5s91vjCdJ9P/Fp/HFuqYal6sLICOZzgq492AafcyBbp0+UUUSUTR2&#13;
-4myPxQNj6NQ3OC0FbqTGnF9Q1NISJIEUWo5cvewUQuM8ziX6/MlMGqtHmwP/UBVKSMx6V6R9qA1H&#13;
-XX6mZxrWh0B32A+s2QZRJXzD0iDCV6kOs3WeNdXMDnPQKWwFBdFO+zP3yX0DqwfxH6TWnNA/Gftn&#13;
-SUpIbbbo/dwOoUm0W1mwa6nQAHcldCca/9opQg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="32" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_1"/>
+    <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
+    <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
+    <elementParameter field="CHECK" name="RECREATE_MAP_SYNC_CONNECTIONS" value="false"/>
+    <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;Jobs/job3/tHMap_1&quot;"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_MAP" show="false" value="true"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_STRING" show="false" value="false"/>
+    <elementParameter field="RADIO" name="AS_MAP" show="false" value="false"/>
+    <elementParameter field="RADIO" name="AS_STRING" show="false" value="false"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" show="false" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" show="false" value="false"/>
+    <elementParameter field="RADIO" name="AS_DOCUMENT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SOURCE_TDM_STRUCT_INCARNATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TARGET_TDM_STRUCT_INCARNATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SOURCE_GENERATED_TDM_STRUCT_PATH" show="false" value=""/>
+    <elementParameter field="TEXT" name="TARGET_GENERATED_TDM_STRUCT_PATH" show="false" value=""/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_OBJECTTYPE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_STRING" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_BYTEARRAY" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_DOCUMENT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HIDE_INPUT_SET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HIDE_OUTPUT_SET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_STRING" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_MAP" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_STRING" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_MAP" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_DOCUMENT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="IS_NEW" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_BYTES" show="false" value="false"/>
+    <elementParameter field="RADIO" name="INCONNECTIONS_SYNCED" show="false" value="true"/>
+    <elementParameter field="RADIO" name="OUTCONNECTIONS_SYNCED" show="false" value="true"/>
+    <elementParameter field="TEXT" name="INCONNECTIONS_ORDER" show="false" value=""/>
+    <elementParameter field="TEXT" name="INCONNECTIONS_REMOVED" show="false" value=""/>
+    <elementParameter field="TEXT" name="OUTCONNECTIONS_REMOVED" show="false" value=""/>
+    <elementParameter field="TEXT" name="HMAP_VAR_PATH" value="&quot;&quot;"/>
+    <elementParameter field="HMAP_VAR_USED_MAPS" name="HMAP_VAR_USED_MAPS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="MAP_ROW_BY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="EMIT_EMPTY_PAYLOAD" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="EXCEPTION" value="64"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;the end is near&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHMap_1" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f9d0cd76-bf68-4310-bafd-ae96c77b8e6c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Dzz+9Uj++nY7s1k8zvnGlfuGQjqzUauOQZU31B03I86N3bZKLldpmPQgmB+T2gPey6gzZOifd5tC&#13;
+V7SPsnH9ow==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_11dfe55d-0c31-4527-948a-cc51adfae770"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VCyimA7fye+cJLxs2+bmVdFqsYlV8ky9oHmgCXXeI9AJvBauKkfPPNrwK84LwT/TqRdbRP33Y5N2&#13;
+Qg9sDYBYoA==</DigestValue></Reference></SignedInfo><SignatureValue>k5c1C8EA+aHxkA5mOKf4QAUR8/4CNxISYa4QKsBNUUrhDyEWQFJLizzQcj9DCeURaH5ZFVlnfuS8&#13;
+h6oT96N/UM2l9Clro4vxNkAg4MpK1hj8LVWkwBJ2APYQmo4HiunsOfmYEsT18mobn9ycqYYH5Zfb&#13;
+lm599JBlYc4Od/6fiynexmxcba2JLKmyxD5P3KNK+axPKYto2fFbgTtNmkxFnonf1PkkPg9zevqM&#13;
+6f0Rx3BEEv7g5MxQnhn4mAxRiTdjJRXcN8jzUMsppgsXX1MqiFC2aP3sjMmmBEB8yinku8+15Oq9&#13;
+PRIUWyM5eLQ4LHyZYmdIyXQKaUgRiDO3iCB2zg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -134,4 +200,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d24e6567-7817-4ef8-82c7-c043ee2e7021" Target="#_70497933-5e78-4c1b-b6af-39d143a4b8ef"><Timestamp>2026-01-11 13:04:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_11dfe55d-0c31-4527-948a-cc51adfae770" Target="#_f9d0cd76-bf68-4310-bafd-ae96c77b8e6c"><Timestamp>2026-01-11 13:05:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
